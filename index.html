@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prudent & Sidonie — Merci</title>
+    <meta name="description" content="Site de mariage minimaliste, palette rose poudré, à personnaliser." />
+    <!-- Polices: serif chic + script pour accents -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;600&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Meow+Script&display=swap" rel="stylesheet">
+    <link rel="preload" href="./fonts/brolimo/Brolimo-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/brolimo/Brolimo-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/brolimo/Brolimo-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/Wellyon/Wellyon-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://laurieanne-d.github.io/sidyetprudent/">
+    <meta property="og:title" content="Prudent & Sidonie — 10 janvier 2026">
+    <meta property="og:description" content="Save the date.">
+    <meta property="og:image" content="https://laurieanne-d.github.io/sidyetprudent/asset/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Prudent & Sidonie — 10 janvier 2026">
+    <meta name="twitter:description" content="Save the date.">
+    <meta name="twitter:image" content="https://laurieanne-d.github.io/sidyetprudent/asset/images/og-image.png">
+
+    <!-- Bonus look & mobile -->
+    <link rel="icon" href="./asset/images/favicon.png">
+    <meta name="theme-color" content="#e9a7b1">
+
+</head>
+
+<!-- ===== Modale livre d'or ===== -->
+<div id="rsvp-modal" class="modal" aria-hidden="true">
+    <div class="modal__overlay" data-close></div>
+
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="rsvp-title">
+        <button class="modal__close" type="button" aria-label="Fermer" data-close>×</button>
+
+        <img class="monogram" src="./asset/images/PS-logo2.png" alt="monogram s et p" />
+        <h2 class="names display">PRUDENT<br>& SIDONIE</h2>
+        <!-- Fleur décorative -->
+        <img class="flower" src="./asset/images/fleur3.png" alt="fleur" />
+        <h3 id="rsvp-title" class="modal__title">Livre d'or</h3>
+        <p class="muted small">Si vous n'avez pas eu l'occasion de signer le livre d'or le jour J, ou si vous souhaitez
+            simplement nous laisser une petite pensée.</p>
+
+        <form id="rsvp-form">
+            <label>
+                <span>Nom & prénom</span>
+                <input id="rsvp-name" name="name" type="text" placeholder="Ex. Alex Dupont" required />
+            </label>
+
+            <label>
+                <span>Message</span>
+                <textarea id="rsvp-message" name="message" placeholder="Votre message..." rows="4"
+                    class="rsvp-msg" required></textarea>
+            </label>
+
+            <div class="actions">
+                <button id="rsvp-send" class="btn btn--accent" type="submit">Envoyer via WhatsApp</button>
+                <button class="btn" type="button" data-close>Annuler</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<body>
+    <!-- HERO rose poudré -->
+    <section class="hero-rose">
+        <div class="container-narrow">
+            <p class="sticker smallcaps">Le dix Janvier 2026</p>
+            <div class="info">
+                <h1 class="names display">PRUDENT & SIDONIE<br>ALCINDOR</h1>
+                <p class="merci">MERCI !</p>
+            </div>
+            <button class="scroll-indicator" aria-label="Faire défiler" data-scroll-to="#home">
+                <span></span>
+            </button>
+        </div>
+        <!-- Fleur décorative -->
+        <img class="flower" src="./asset/images/fleur2.png" alt="" />
+    </section>
+
+    <!-- Cadre principal avec gouttières roses -->
+    <main class="page" id="home">
+        <div class="gutter"></div>
+        <article class="sheet">
+            <!-- LOGO rond P & S -->
+            <img class="monogram" src="./asset/images/PS-logo.png" alt="" />
+
+            <!-- Bloc intro -->
+            <section class="intro reveal-up" data-reveal-once>
+                <h2 class="title reveal reveal-slow reveal-left" data-reveal-once>C'ÉTAIT MAGIQUE</h2>
+                <p class="tag reveal reveal-slow reveal-left" data-reveal-once>Love & gratitude</p>
+
+                <div class="reveal reveal-slow reveal-left" data-reveal-once>
+                    <p class="lead">Nous avons été comblés par votre présence, vos sourires et votre amour.
+                        Merci d'avoir fait de ce 10 janvier le plus beau jour de notre vie.</p>
+                    <p class="lead">Vos attentions nous ont touchés droit au cœur et nous garderons un souvenir ému de
+                        ces instants partagés.</p>
+                </div>
+
+                <figure class="frame reveal reveal-up" data-reveal-once>
+                    <img class="squash" src="./asset/images/couple.png" alt="couple" />
+                    <figcaption class="center smallcaps" style="margin-top: 8px; color: var(--accent);">Just Married
+                    </figcaption>
+                </figure>
+
+                <!-- Compteur (Mariés depuis...) -->
+                <section class="reveal count-ctn">
+                    <p class="center smallcaps" style="margin-bottom: -30px; position: relative; z-index: 1;">Le bonheur
+                        continue</p>
+                    <ul id="count-up" class="countdown bleed-x reveal reveal-wipe" data-reveal-once
+                        data-date="2026-01-10T15:00:00">
+                        <li class="cd-item"><span id="cd-days">00</span><small>Jours</small></li>
+                        <li class="cd-item"><span id="cd-hours">00</span><small>Heures</small></li>
+                        <li class="cd-item"><span id="cd-mins">00</span><small>Minutes</small></li>
+                        <li class="cd-item"><span id="cd-secs">00</span><small>Secondes</small></li>
+                    </ul>
+                </section>
+
+
+                <!-- Galerie Souvenir (Remplace l'itinéraire) -->
+                <section class="memories reveal">
+                    <h2 class="title center">SOUVENIRS</h2>
+                    <p class="tag" style="margin-top:0;">Instants volés</p>
+
+                    <div class="gallery-grid">
+                        <!-- Galerie Item 1 -->
+                        <div class="gallery-item">
+                            <img src="./asset/images/souvernir1.png"
+                                onerror="this.src='https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'"
+                                alt="Cérémonie">
+                        </div>
+                        <!-- Galerie Item 2 -->
+                        <div class="gallery-item">
+                            <img src="./asset/images/souvernir2.png"
+                                onerror="this.src='https://images.unsplash.com/photo-1519225427186-68628f772750?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'"
+                                alt="Réception">
+                        </div>
+                        <!-- Galerie Item 3 -->
+                        <div class="gallery-item">
+                            <img src="./asset/images/souvenir3.png"
+                                onerror="this.src='https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'"
+                                alt="Détails">
+                        </div>
+                        <!-- Galerie Item 4 -->
+                        <div class="gallery-item">
+                            <img src="./asset/images/souvenir4.png"
+                                onerror="this.src='https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'"
+                                alt="Soirée">
+                        </div>
+                    </div>
+
+                    <div class="center reveal reveal-delay-1" style="margin-top: 40px;">
+                        <p style="margin-bottom: 20px;">Retrouvez l'intégralité des photos sur notre galerie privée.</p>
+                        <a href="#" class="btn btn-cta"
+                            onclick="alert('Lien vers votre Google Photos ou Galerie Privée')">
+                            Voir l'album complet
+                        </a>
+                    </div>
+                </section>
+
+                <!-- RSVP bandeau olive -->
+                <section class="rsvp-band bleed-x" id="rsvp">
+                    <div class="rsvp-inner reveal reveal-up" data-reveal-once>
+                        <h3>Livre d'or</h3>
+                        <p>Laissez une trace de votre passage. Vos messages sont les plus beaux cadeaux que nous
+                            puissions recevoir après cette journée.</p>
+                        <a id="rsvp-open" class="btn-cta btn btn--accent" href="#rsvp" target="_blank"
+                            rel="noopener">Écrire aux mariés</a>
+                    </div>
+                </section>
+
+                <div class="citations reveal reveal-up" data-reveal-once>
+                    <p>Il fait toute chose belle au bon moment - Eccl 3:11.</p>
+                    <p>L’amour pardonne, fait confiance, espère et persévère ; il ne finit jamais - 1 Co 13:7-8.</p>
+                </div>
+
+                <section class="outro">
+                    <img class="monogram small reveal reveal-up" data-reveal-once src="./asset/images/PS-logo.png"
+                        alt="" />
+                    <h2 class="title center reveal reveal-up" data-reveal-once>PRUDENT<br>& SIDONIE</h2>
+                    <p class="tag">À bientôt</p>
+                    <figure class="frame illus reveal reveal-up" data-reveal-once>
+                        <img src="./asset/images/couple-fin.png" alt="Portrait" />
+                    </figure>
+                </section>
+        </article>
+        <div class="gutter"></div>
+    </main>
+
+    <footer class="site-footer">
+        <!-- Outro avec grand visuel -->
+        <p>© 2026 Prudent & Sidonie — Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
